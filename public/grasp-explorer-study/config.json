@@ -99,7 +99,7 @@
       "type": "website",
       "path": "https://skapoor19-explorer-staging.hf.space",
       "instructionLocation": "sidebar",
-      "instruction": "**Section 1: Explore the scatter plot and clustering.**\n\n**Tip:** Close this sidebar (X above) for a full-width view of the tool. You can reopen it from the menu when you're ready to move on.\n\nDo NOT type a query yet. Just look at the default view:\n- Hover over points to see method names\n- Look at the cluster colors and labels\n- **Click a cluster label in the legend** to filter\n- Try the **Color by** dropdown to see different attributes\n- Try dragging a **weight slider** — watch how the scatter plot reorganizes\n- Click a method to see its details\n\n**Think aloud**: describe what you see and whether the groupings make sense.\n\n**Note:** You won't have access to the tool while answering questions next, so take a good look now.\n\nWhen done, click **Next**.",
+      "instruction": "**Section 1: Explore the scatter plot and clustering.**\n\n**Tip:** Close the Study Browser panel on the right for a full-width view of the tool. You can reopen it from the menu when you're ready to move on.\n\nDo NOT type a query yet. Just look at the default view:\n- Hover over points to see method names\n- Look at the cluster colors and labels\n- **Click a cluster label in the legend** to filter\n- Try the **Color by** dropdown to see different attributes\n- Try dragging a **weight slider** — watch how the scatter plot reorganizes\n- Click a method to see its details\n\n**Think aloud**: describe what you see and whether the groupings make sense.\n\n**Note:** You won't have access to the tool while answering questions next, so take a good look now.\n\nWhen done, click **Next**.",
       "nextButtonLocation": "sidebar",
       "recordAudio": true,
       "recordScreen": true,
@@ -191,7 +191,7 @@
       "type": "website",
       "path": "https://skapoor19-explorer-staging.hf.space",
       "instructionLocation": "sidebar",
-      "instruction": "**Section 2: Try the AI Copilot & Controls.**\n\n**Tip:** Close this sidebar (X above) for a full-width view. Reopen from the menu when ready to move on.\n\nAsk **2-3 questions** using the search bar.\n\nAfter each query:\n- Read the AI insight bullets\n- Check if it cites specific papers\n- Notice how the scatter plot and **weight sliders** update\n- Try the **Color by** dropdown to see attributes like End-effector or Input Data\n- **Scroll down** to see the analytics charts\n\nAlso try:\n- Drag a **weight slider** to see how the scatter plot reorganizes\n- Click a legend item to filter\n\n**Think aloud**: tell us what's useful and what's confusing.\n\nWhen done, click **Next**.",
+      "instruction": "**Section 2: Try the AI Copilot & Controls.**\n\n**Tip:** Close the Study Browser panel on the right for a full-width view. Reopen it when you're ready to move on.\n\nAsk **2-3 questions** using the search bar.\n\nAfter each query:\n- Read the AI insight bullets\n- Check if it cites specific papers\n- Notice how the scatter plot and **weight sliders** update\n- Try the **Color by** dropdown to see attributes like End-effector or Input Data\n- **Scroll down** to see the analytics charts\n\nAlso try:\n- Drag a **weight slider** to see how the scatter plot reorganizes\n- Click a legend item to filter\n\n**Think aloud**: tell us what's useful and what's confusing.\n\nWhen done, click **Next**.",
       "nextButtonLocation": "sidebar",
       "recordAudio": true,
       "recordScreen": true,
@@ -376,7 +376,7 @@
       "type": "website",
       "path": "https://skapoor19-explorer-staging.hf.space",
       "instructionLocation": "sidebar",
-      "instruction": "**Section 3: Explore the Knowledge Base.**\n\n**Tip:** Close this sidebar (X above) for a full-width view. Reopen from the menu when ready to move on.\n\nClick the **Knowledge Base** tab at the top of the tool.\n\n- Browse the embedding scatter — each dot is a text chunk from a paper\n- Click a paper chip on the right to highlight its chunks\n- Try clicking a content type label (e.g., 'How it works') to filter\n- Read a few chunk passages — are they readable and meaningful?\n\nIf you typed a query in Section 2, check whether the relevant papers are highlighted.\n\n**Think aloud**: tell us whether the chunk view helps you understand the paper evidence.\n\n**Note:** You won't have access to the tool while answering questions next, so take a good look now.\n\nWhen done, click **Next**.",
+      "instruction": "**Section 3: Explore the Knowledge Graph & Knowledge Base.**\n\n**Tip:** Close the Study Browser panel on the right for a full-width view. You can reopen it when you're ready to move on.\n\nNote: The knowledge graph currently covers 34 of the 56 methods (those with available papers). This is a work in progress — we'd love your feedback on what to prioritize.\n\n**Step 1 — Graph Reasoning tab** (spend most of your time here):\n- Click the **Graph Reasoning** tab at the top\n- Click a method or paper node to see its subgraph\n- Look at the edge types: cites, uses_backbone, trained_on, uses_architecture, etc.\n- Check the **Predicted Links** — these are AI-predicted relationships not explicitly stated in papers. Are they plausible?\n- Toggle edge/node type filters in the sidebar\n\n**Step 2 — Knowledge Base tab:**\n- Click the **Knowledge Base** tab\n- Browse the embedding scatter (each dot = a text chunk from a paper)\n- Click a paper chip to highlight its chunks\n- Try content type filters (How it works / Results)\n\n**Think aloud**: describe what relationships you find interesting, whether the graph connections match your domain knowledge, and what's missing.\n\n**Note:** You won't have access to the tool while answering questions next, so explore thoroughly.\n\nWhen done, click **Next**.",
       "nextButtonLocation": "sidebar",
       "recordAudio": true,
       "recordScreen": true,
@@ -386,11 +386,11 @@
     "section4-feedback": {
       "type": "markdown",
       "path": "grasp-explorer-study/assets/section4-intro.md",
-      "instruction": "Questions about the Knowledge Base page.",
+      "instruction": "Questions about the Knowledge Graph and Knowledge Base.",
       "response": [
         {
-          "id": "s4-chunk-embedding-useful",
-          "prompt": "The scatter plot showing text chunks (each dot = one passage from a paper) was a useful way to explore the evidence.",
+          "id": "s4-kg-relationships-useful",
+          "prompt": "The knowledge graph helped me understand how methods relate to each other (shared backbones, citations, training data, etc.).",
           "type": "likert",
           "numItems": 7,
           "leftLabel": "Strongly disagree",
@@ -398,8 +398,8 @@
           "location": "belowStimulus"
         },
         {
-          "id": "s4-chunk-quality",
-          "prompt": "The text passages shown were readable and captured meaningful content from the papers.",
+          "id": "s4-kg-discovered-new",
+          "prompt": "The knowledge graph revealed connections or relationships I did not already know about.",
           "type": "likert",
           "numItems": 7,
           "leftLabel": "Strongly disagree",
@@ -407,8 +407,8 @@
           "location": "belowStimulus"
         },
         {
-          "id": "s4-chunk-types-sensible",
-          "prompt": "The content type labels (How it works / Implementation / Results) accurately described what was in the passages.",
+          "id": "s4-kg-predicted-links",
+          "prompt": "The predicted links (from the HGT model) were plausible and potentially useful for discovering unstated relationships.",
           "type": "likert",
           "numItems": 7,
           "leftLabel": "Strongly disagree",
@@ -416,14 +416,30 @@
           "location": "belowStimulus"
         },
         {
-          "id": "s4-chunk-types-alternative",
-          "prompt": "If you would categorize passages differently, how would you label them?",
+          "id": "s4-kg-edge-types",
+          "prompt": "Which relationship types were most valuable to explore? Which were missing?",
           "type": "longText",
-          "placeholder": "e.g., different categories, finer distinctions, or 'the current ones are fine'...",
+          "placeholder": "e.g., 'cites and uses_backbone were useful; I wanted to see performance comparison edges'...",
           "location": "belowStimulus"
         },
         {
-          "id": "s4-query-filtering-useful",
+          "id": "s4-kg-what-else",
+          "prompt": "What additional information or features would you want to see on the Graph Reasoning page?",
+          "type": "longText",
+          "placeholder": "e.g., temporal evolution, method lineage trees, performance comparison overlays, community detection...",
+          "location": "belowStimulus"
+        },
+        {
+          "id": "s4-kb-chunk-quality",
+          "prompt": "The text passages in the Knowledge Base were readable and captured meaningful content from the papers.",
+          "type": "likert",
+          "numItems": 7,
+          "leftLabel": "Strongly disagree",
+          "rightLabel": "Strongly agree",
+          "location": "belowStimulus"
+        },
+        {
+          "id": "s4-kb-query-filtering",
           "prompt": "When query results highlighted relevant papers in the Knowledge Base, it helped me trace where the AI's answer came from.",
           "type": "likert",
           "numItems": 7,
@@ -432,37 +448,23 @@
           "location": "belowStimulus"
         },
         {
-          "id": "s4-missing-information",
-          "prompt": "What information from a paper is most critical when someone is deciding whether to use a method — and is it captured in the chunks you saw?",
-          "type": "longText",
-          "placeholder": "e.g., success rates, hardware requirements, failure modes, comparison results, code availability...",
-          "location": "belowStimulus"
-        },
-        {
           "id": "s4-expert-questions",
           "prompt": "If you could search across all 34 papers for one thing — something you genuinely want to know — what would you ask?",
           "type": "longText",
-          "placeholder": "These become ground truth test queries for our RAG system...",
+          "placeholder": "These become ground truth test queries for our system...",
           "location": "belowStimulus"
         },
         {
           "id": "s4-paper-coverage",
-          "prompt": "If your own paper is in the knowledge base, did the chunks reflect its key contributions accurately?",
+          "prompt": "If your own paper is in the knowledge base, did the graph and chunks reflect its key contributions accurately?",
           "type": "dropdown",
           "options": [
             "Yes, the key points were captured",
             "Partially — some important parts were missing",
-            "No, the chunks missed the main contributions",
+            "No, the graph/chunks missed the main contributions",
             "My paper is not in the knowledge base",
             "I did not check my paper"
           ],
-          "location": "belowStimulus"
-        },
-        {
-          "id": "s4-paper-coverage-detail",
-          "prompt": "If your paper's chunks were missing or incorrect, what was the most important thing they missed?",
-          "type": "longText",
-          "placeholder": "Optional: describe what was missing or wrong...",
           "location": "belowStimulus"
         }
       ]
@@ -478,7 +480,7 @@
       "type": "website",
       "path": "https://www.robot-manipulation.org/software/grasp-planning",
       "instructionLocation": "sidebar",
-      "instruction": "**This is the current COMPARE spreadsheet** at robot-manipulation.org.\n\n**Tip:** Close this sidebar (X above) for a full-width view. Reopen from the menu when ready to move on.\n\nSpend 1-2 minutes browsing it. Try to:\n- Find a method that uses reinforcement learning\n- Compare two methods side by side\n- Get an overview of the field\n\nThink about how this compares to the Grasp Explorer you just used.\n\nWhen done, click **Next**.",
+      "instruction": "**This is the current COMPARE spreadsheet** at robot-manipulation.org.\n\n**Tip:** Close the Study Browser panel on the right for a full-width view. Reopen it when you're ready to move on.\n\nSpend 1-2 minutes browsing it. Try to:\n- Find a method that uses reinforcement learning\n- Compare two methods side by side\n- Get an overview of the field\n\nThink about how this compares to the Grasp Explorer you just used.\n\nWhen done, click **Next**.",
       "nextButtonLocation": "sidebar",
       "recordAudio": true,
       "recordScreen": true,
