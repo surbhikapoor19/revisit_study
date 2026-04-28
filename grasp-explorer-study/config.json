@@ -97,7 +97,7 @@
 
     "section1-explore": {
       "type": "website",
-      "path": "https://grasp-explorer-explorer-stage.hf.space",
+      "path": "https://skapoor19-explorer-staging.hf.space",
       "instructionLocation": "sidebar",
       "instruction": "**Section 1: Explore the scatter plot and clustering.**\n\n**Tip:** Close this sidebar (X above) for a full-width view of the tool. You can reopen it from the menu when you're ready to move on.\n\nDo NOT type a query yet. Just look at the default view:\n- Hover over points to see method names\n- Look at the cluster colors and labels\n- **Click a cluster label in the legend** to filter\n- Try the **Color by** dropdown to see different attributes\n- Try dragging a **weight slider** — watch how the scatter plot reorganizes\n- Click a method to see its details\n\n**Think aloud**: describe what you see and whether the groupings make sense.\n\n**Note:** You won't have access to the tool while answering questions next, so take a good look now.\n\nWhen done, click **Next**.",
       "nextButtonLocation": "sidebar",
@@ -189,7 +189,7 @@
 
     "section2-explore": {
       "type": "website",
-      "path": "https://grasp-explorer-explorer-stage.hf.space",
+      "path": "https://skapoor19-explorer-staging.hf.space",
       "instructionLocation": "sidebar",
       "instruction": "**Section 2: Try the AI Copilot & Controls.**\n\n**Tip:** Close this sidebar (X above) for a full-width view. Reopen from the menu when ready to move on.\n\nAsk **2-3 questions** using the search bar.\n\nAfter each query:\n- Read the AI insight bullets\n- Check if it cites specific papers\n- Notice how the scatter plot and **weight sliders** update\n- Try the **Color by** dropdown to see attributes like End-effector or Input Data\n- **Scroll down** to see the analytics charts\n\nAlso try:\n- Drag a **weight slider** to see how the scatter plot reorganizes\n- Click a legend item to filter\n\n**Think aloud**: tell us what's useful and what's confusing.\n\nWhen done, click **Next**.",
       "nextButtonLocation": "sidebar",
@@ -200,7 +200,7 @@
 
     "section2-feedback-with-tool": {
       "type": "website",
-      "path": "https://grasp-explorer-explorer-stage.hf.space",
+      "path": "https://skapoor19-explorer-staging.hf.space",
       "instructionLocation": "sidebar",
       "instruction": "**Rate the AI Copilot** while looking at the results.\n\nYour last query results are still visible. Scroll through the insights, paper evidence, and charts as you answer these questions in the sidebar.",
       "nextButtonLocation": "sidebar",
@@ -374,7 +374,7 @@
 
     "section4-explore": {
       "type": "website",
-      "path": "https://grasp-explorer-explorer-stage.hf.space",
+      "path": "https://skapoor19-explorer-staging.hf.space",
       "instructionLocation": "sidebar",
       "instruction": "**Section 3: Explore the Knowledge Base.**\n\n**Tip:** Close this sidebar (X above) for a full-width view. Reopen from the menu when ready to move on.\n\nClick the **Knowledge Base** tab at the top of the tool.\n\n- Browse the embedding scatter — each dot is a text chunk from a paper\n- Click a paper chip on the right to highlight its chunks\n- Try clicking a content type label (e.g., 'How it works') to filter\n- Read a few chunk passages — are they readable and meaningful?\n\nIf you typed a query in Section 2, check whether the relevant papers are highlighted.\n\n**Think aloud**: tell us whether the chunk view helps you understand the paper evidence.\n\n**Note:** You won't have access to the tool while answering questions next, so take a good look now.\n\nWhen done, click **Next**.",
       "nextButtonLocation": "sidebar",
