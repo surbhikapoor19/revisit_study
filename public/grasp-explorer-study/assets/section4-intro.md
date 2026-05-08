@@ -1,40 +1,40 @@
-# Section 3: Knowledge Graph & Knowledge Base
+# Section 3: Knowledge Graph & Detail Panel
 
-This section covers two connected pages: the **Graph Reasoning** page (knowledge graph) and the **Knowledge Base** page (paper chunks). Both help you dig deeper into how methods relate to each other and what the papers actually say.
+This section is about the **Graph Reasoning** page: the knowledge graph itself, and the detail panel that opens below it when you click a node. The graph covers 55 of the 56 grasp planning methods. We want your feedback on both surfaces from a robotics-comparison standpoint.
 
-Note: The knowledge graph currently covers **34 of the 56 methods** (those with available papers). This is a work in progress — your feedback will help us prioritize what to build next.
+## What you're looking at
 
-## Graph Reasoning (Knowledge Graph)
+The graph shows methods, papers, techniques, authors, institutions, datasets, and hardware as nodes. Edges include *cites*, *outperforms*, *cited_by_external*, *uses_technique*, *evaluated_on*, *compared_against*, and more.
 
-The **Graph Reasoning** tab shows a structured knowledge graph built from the 34 ingested papers. Nodes represent methods, papers, techniques, authors, and hardware; edges represent relationships like *cites*, *uses_backbone*, *trained_on*, *uses_architecture*, and *semantically_similar*.
+Two views you can toggle at the top:
 
-- **Subgraph exploration**: Click a method or paper to see its local neighborhood — what it cites, what backbone it uses, what techniques it shares with other methods
-- **Predicted links**: An HGT (Heterogeneous Graph Transformer) model predicts relationships the papers don't explicitly state — potential connections between methods. We'd like your opinion on whether these are plausible.
-- **Filters**: Toggle edge types and node types to focus on specific relationships
+- **Knowledge Graph** — observed relationships extracted directly from the papers (citations, claims, techniques, tables).
+- **Predicted Relationships** — relationships an HGT (Heterogeneous Graph Transformer) model thinks should exist but no paper states yet (e.g. "these two methods are likely benchmarked head-to-head," "this paper probably uses this technique").
 
-## Knowledge Base (Paper Chunks)
+## The detail panel (below the graph)
 
-The **Knowledge Base** tab shows the 34 papers broken into searchable text passages (**chunks**), tagged by content type (*How it works*, *Implementation*, *Results*) and extraction level (*Overview*, *Section*, *Detail*).
+Clicking any paper node opens a panel below the graph with:
 
-- The **embedding scatter** shows chunks as dots — similar topics cluster together across papers
-- Click a **paper chip** to highlight its chunks
-- If you ran a query, relevant papers are highlighted automatically
+- **Identity strip** — year, authors, institution.
+- **Method spec card** — input modality, output pose, end-effector, scene, planning approach, training, datasets, hardware.
+- **Compared-with rail** — outperforms / compared-against rows with the metric and value pulled from that paper's own benchmark tables when available.
+- **Chip ribbons** — techniques and benchmarks.
+- **Contributions / Limitations / Problem addressed** — extracted from the paper's text.
+- **Citation timeline** — yearly stance-coded bars (builds-on, neutral, contrasts, cited externally).
+- **Provenance footer** — observed vs predicted edge counts.
 
-## What to explore
+## What we're asking you to do
 
-1. Go to **Graph Reasoning** first — click a method node, explore its connections, check predicted links
-2. Then visit **Knowledge Base** — browse chunk passages, try content type filters
-3. Think about: do the graph relationships match your domain knowledge? Are the predicted links plausible? What's missing?
+1. Click a paper you know well. Read the detail panel below the graph. Does it match what you would say about the method to a colleague?
+2. Switch to **Predicted Relationships**. Pick one or two predicted edges. Do they look plausible? Would you investigate them?
+3. Now click a paper you don't know. Does the panel give you enough to write the first paragraph of a related-work section?
 
-## Heads up: what we will ask after you explore
+(**Tip:** hold ⌘ or Ctrl and scroll to zoom the graph. Plain scroll moves the page.)
 
-- Did the knowledge graph reveal relationships you didn't already know?
-- Were the predicted links plausible or surprising?
-- What relationship types or features would you want to see that aren't there yet?
-- Were the text passages in the Knowledge Base readable and meaningful?
+## Heads up: what we will ask
 
-## Think aloud
+- Are the HGT predictions plausible, and would you act on them?
+- Did the detail panel give you what a roboticist needs to compare two methods?
+- What is missing from either surface?
 
-Please describe what you discover in the graph, whether the connections make sense for your domain, and what you'd want us to add.
-
-Click **Next** to explore the Knowledge Graph and Knowledge Base.
+Click **Next** to explore.
